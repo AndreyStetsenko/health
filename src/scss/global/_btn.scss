@@ -1,0 +1,97 @@
+.btn {
+	&-cart {
+		width: 28px;
+		height: 28px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 3px;
+		transition: .2s ease all;
+
+		&--light {
+			background: $l-main;
+		}
+
+		&--main {
+			background: $main;
+
+			.ico {
+				background: url('../img/cart_w.svg');
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+
+	&-main {
+		padding: 10px 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 3px;
+		font-size: 10px;
+		text-decoration: none;
+	}
+
+	&-color {
+		background: $main;
+		color: $white;
+		font-weight: 500;
+	}
+
+	&-transparent {
+		background: transparent;
+		color: $black;
+		font-weight: 300;
+
+		&.active {
+			background: $main;
+			color: $white;
+			font-weight: 500;
+		}
+	}
+
+	&-social {
+		padding: 8px 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid transparent;
+		border-radius: 3px;
+		font-size: 10px;
+		text-decoration: none;
+
+		&--tg {
+			border-color: $blue;
+			color: $blue;
+		}
+
+		&--wa {
+			border-color: $green;
+			color: $green;
+		}
+
+		.ico {
+			margin-right: 6px;
+		}
+	}
+
+	&-num {
+		width: 20px;
+		height: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		border-radius: 6px;
+		background: $main;
+		color: $white;
+		transition: .2s ease all;
+		cursor: pointer;
+
+		&.inactive {
+			background: $white;
+			color: $black;
+		}
+	}
+}

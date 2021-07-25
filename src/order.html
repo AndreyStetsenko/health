@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"SunGlass",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	<div id="page">
+		@@include('components/page-blocks/_header.html')
+
+		<section class="sect">
+			<div class="order">
+				<a href="" class="back">Оформление заказа</a>
+				
+				<form>
+					<div class="order-cont">
+					
+						<div class="input-group">
+							<label for="u_name">Имя</label>
+							<input type="text" name="u_name" id="u_name" placeholder="Ваше имя">
+						</div>
+
+						<div class="input-group">
+							<label for="u_phone">Телефон</label>
+							<input type="text" name="u_phone" id="u_phone" placeholder="+7 ___ ___ __ __">
+						</div>
+
+						<div class="input-group">
+							<label for="u_email">Почта</label>
+							<input type="text" name="u_email" id="u_email" placeholder="Ваша почта (необязательно)">
+						</div>
+
+						<div class="input-group">
+							<label for="u_direction">Адрес доставки</label>
+							<input type="text" name="u_direction" id="u_direction" placeholder="Улица, дом, квартира">
+						</div>
+
+						<div class="input-group">
+							<label>Способ оплаты</label>
+
+							<div class="input-group--choice">
+								<label class="btn btn-main">
+									<i class="ico ico-cash"></i>
+									<input type="radio" name="method" value="cash">
+									Наличкой
+								</label>
+
+								<label class="btn btn-main">
+									<i class="ico ico-card"></i>
+									<input type="radio" name="method" value="card">
+									Картой
+								</label>
+							</div>
+						</div>
+
+						<a href="" class="btn btn-main btn-color w-100">Оформить заказ</a>
+
+					</div>
+				</form>
+			</div>
+		</section>
+
+		@@include('components/page-blocks/_footer.html')
+		@@include('components/page-blocks/_scripts.html')
+	</div>
+</body>
+
+</html>

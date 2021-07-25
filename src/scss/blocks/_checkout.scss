@@ -1,0 +1,35 @@
+.checkout {
+	width: calc(100% - 40px);
+	padding: 10px 0 30px;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	background: $white;
+
+	&-sum {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		&--title {
+			font-size: 16px;
+			font-weight: bold;
+			color: $main;
+		}
+
+		&--num {
+			font-size: 16px;
+			font-weight: 400;
+			color: $black;
+		}
+	}
+
+	.btn {
+		margin-top: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

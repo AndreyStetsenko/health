@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.flex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.--just-space {
+	justify-content: space-between;
+}
+
+.--just-center {
+	justify-content: center;
+}
+
+.--just-end {
+	justify-content: flex-end;
+}
+
+.--align-str {
+	align-items: stretch;
+}
+
+.--align-center {
+	align-items: center;
+}
+
+.--align-end {
+	align-items: flex-end;
+}
+
+.--dir-col {
+	flex-direction: column;
+}
+
+.sect {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.pt-30 {
+	padding-top: 30px;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+#page {
+	padding-top: 68px;
+	padding-bottom: 20px;
+}
+
+html {
+	font-size: 16px;
+}
+
+html,
+body {
+	min-height: 100vh;
+	position: relative;
+}
+
+body {
+	font-size: 1rem;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}

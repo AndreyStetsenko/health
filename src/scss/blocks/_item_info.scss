@@ -1,0 +1,158 @@
+.item_info {
+	width: 100%;
+	padding: 5px 10px 5px 5px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	background: $l-main;
+	border-radius: 10px;
+
+	&--cart {
+		margin-bottom: 20px;
+
+		&:last-child {
+			margin-bottom: 120px;
+		}
+
+		.item_info {
+			&-prices {
+				padding-top: 5px;
+			}
+
+			&--price {
+				font-size: 10px;
+			}
+
+			&--old_price {
+				font-size: 8px;
+			}
+		}
+	}
+
+	&-close {
+		width: 6px;
+		height: 6px;
+		display: block;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		background: url('/img/close.svg');
+		cursor: pointer;
+	}
+
+	&-feedback {
+		padding: 20px;
+	}
+
+	&-img {
+		height: 100px;
+		width: 100px;
+		border-radius: 5px;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&-ava {
+		&--img {
+			width: 38px;
+			height: 38px;
+			border-radius: 50%;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	&-content {
+		margin-top: 5px;
+		font-size: 8px;
+		font-weight: 400;
+		line-height: 13.2px;
+		color: $gray;
+	}
+
+	&-cont {
+		padding-left: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&--model {
+		font-size: 6px;
+		font-weight: 400;
+		color: $gray;
+	}
+
+	&--title {
+		font-size: 10px;
+		font-weight: 500;
+		color: $black;
+	}
+
+	&-bottom {
+		padding-top: 15px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&-prices {
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+
+	&-price {
+		font-size: 14px;
+		font-weight: 500;
+		color: $black;
+	}
+
+	&--old_price {
+		padding-left: 10px;
+		font-size: 10px;
+		font-weight: 300;
+		color: $gray;
+		text-decoration: line-through;
+	}
+
+	&-amount {
+		padding-top: 15px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		input[type="number"] {
+			width: 25px;
+			background: transparent;
+			border: none;
+			text-align: center;
+			font-size: 12px;
+			font-weight: 500;
+
+			&::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+		    -webkit-appearance: none;
+			}
+		}
+	}
+}
+
+.item_double {
+	.item_info {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

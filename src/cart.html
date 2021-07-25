@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"SunGlass",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	<div id="page">
+		@@include('components/page-blocks/_header.html')
+
+		<section class="sect">
+			<div class="cart">
+				<a href="" class="back">Корзина</a>
+
+				<div class="cart-cont">
+
+					<div class="cart-item item_info item_info--cart item">
+						<div class="item_info-close"></div>
+						<div class="item_info-img">
+							<img src="./img/pic/girl-in-sunglasses-K5Z2GWN.jpg" alt="">
+						</div>
+
+						<div class="item_info-cont">
+							<span class="item_info--model">Витамины</span>
+							<h3 class="item_info--title">Витамины группы А и Е № 556</h3>
+
+							<div class="item_info-mini">
+								<div class="item_info-prices">
+									<span class="item_info--price">2 899 ₴</span>
+									<span class="item_info--old_price">3 599 ₴</span>
+								</div>
+							</div>
+
+							<div class="item_info-amount">
+								<button class="btn btn-num minus">-</button>
+								<input type="number" name="amount" value="1" min="1" disabled>
+								<button class="btn btn-num plus">+</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="cart-item item_info item_info--cart item">
+						<a href="" class="item_info-close"></a>
+						<div class="item_info-img">
+							<img src="./img/pic/portrait-of-handsome-stylish-young-man-in-sunglass-2021-07-16-20-07-52-utc.jpg" alt="">
+						</div>
+
+						<div class="item_info-cont">
+							<span class="item_info--model">Минералы</span>
+							<h3 class="item_info--title">Минералы для женщин № 145</h3>
+
+							<div class="item_info-mini">
+								<div class="item_info-prices">
+									<span class="item_info--price">1 150 ₴</span>
+								</div>
+							</div>
+
+							<div class="item_info-amount">
+								<button class="btn btn-num minus">-</button>
+								<input type="number" name="amount" value="1" min="1" disabled>
+								<button class="btn btn-num plus">+</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="cart-item item_info item_info--cart item">
+						<a href="" class="item_info-close"></a>
+						<div class="item_info-img">
+							<img src="./img/pic/girl-wearing-hat-and-sunglasses-2021-04-02-20-28-17-utc.jpg" alt="">
+						</div>
+
+						<div class="item_info-cont">
+							<span class="item_info--model">Добавки</span>
+							<h3 class="item_info--title">Пищевая добавка для улучшения пищеварения</h3>
+
+							<div class="item_info-mini">
+								<div class="item_info-prices">
+									<span class="item_info--price">10 990 ₴</span>
+								</div>
+							</div>
+
+							<div class="item_info-amount">
+								<button class="btn btn-num minus">-</button>
+								<input type="number" name="amount" value="1" min="1" disabled>
+								<button class="btn btn-num plus">+</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="sect">
+			<div class="checkout">
+				<div class="checkout-sum">
+					<span class="checkout-sum--title">Итого</span>
+					<span class="checkout-sum--num">15 039 ₴</span>
+				</div>
+				<a href="" class="btn btn-main btn-color">Оформить заказ</a>
+			</div>
+		</section>
+
+		@@include('components/page-blocks/_footer.html')
+		@@include('components/page-blocks/_scripts.html')
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+$url_img: '../img/';
+
+.ico {
+	display: block;
+	background-position: center;
+
+	&-cart {
+		width: 17px;
+		height: 14px;
+		background: url($url_img + 'cart.svg');
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	&-smile {
+		width: 14px;
+		height: 14px;
+		background-image: url($url_img + 'smile.svg');
+	}
+
+	&-tabl {
+		width: 14px;
+		height: 14px;
+		background-image: url($url_img + 'tabl.svg');
+	}
+
+	&-arrow {
+		width: 16px;
+		height: 8px;
+  	background: url($url_img + 'arrow.svg');
+
+		&.left {
+			transform: rotate(0);
+		}
+
+		&.right {
+			transform: rotate(180deg);
+		}
+	}
+
+	&-play {
+		width: 15px;
+		height: 17px;
+		background: url($url_img + 'play.svg');
+	}
+
+	&-whatsapp {
+		width: 14px;
+		height: 14px;
+		background: url($url_img + 'WhatsApp.svg');
+	}
+
+	&-telegram {
+		width: 14px;
+		height: 14px;
+		background: url($url_img + 'Telegram.svg');
+	}
+
+	&-cash {
+		width: 21px;
+		height: 12px;
+		background: url($url_img + 'cash_g.svg');
+	}
+
+	&-card {
+		width: 21px;
+		height: 12px;
+		background: url($url_img + 'card_g.svg');
+	}
+}

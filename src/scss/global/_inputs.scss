@@ -1,0 +1,79 @@
+.input-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	label {
+		margin-bottom: 5px;
+		font-size: 8px;
+		font-weight: 500;
+		color: $black;
+	}
+
+	input[type="text"] {
+		padding: 10px 12px;
+		border-radius: 3px;
+		border: none;
+		background-color: $l-main;
+		font-size: 10px;
+		font-weight: 400;
+		color: $black;
+
+		&:placeholder {
+			color: $gray;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&--choice {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.btn {
+			width: 100%;
+			margin-right: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: $l-main;
+			cursor: pointer;
+			transition: .05s ease all;
+			font-size: 10px;
+			font-weight: 500;
+			color: $gray;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&.active {
+				background: $main;
+				color: $white;
+
+				.ico-cash {
+					background: url('../img/cash_w.svg');
+				}
+
+				.ico-card {
+					background: url('../img/card_w.svg');
+				}
+			}
+
+			.ico {
+				margin-right: 8px;
+			}
+
+			input[type="radio"] {
+				display: none;
+			}
+		}
+	}
+}

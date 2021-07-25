@@ -1,0 +1,14 @@
+.socials {
+	padding-top: 20px;
+	display: flex;
+	flex-direction: row;
+
+	.btn-social {
+		width: 100%;
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

@@ -1,0 +1,99 @@
+.cpanel {
+	padding-top: 10px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&-arrows {
+		width: 100%;
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&-dots {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	&-dot {
+		width: 6px;
+		height: 6px;
+		margin: 0 2px;
+		background: $black;
+		border-radius: 1px;
+
+		&.active {
+			background: $main;
+		}
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.owl {
+	&-nav {
+		width: 100%;
+		bottom: -21px;
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		z-index: 2;
+	}
+
+	&-prev, &-next {
+		display: block;
+
+		&:hover {
+			background: none !important;
+		}
+	}
+
+	&-prev {
+		transform: rotate(0deg);
+	}
+
+	&-next {
+		transform: rotate(180deg);
+	}
+
+	&-dots {
+		width: 100%;
+		bottom: -20px;
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	&-dot {
+		width: 6px;
+		height: 6px;
+		margin: 0 2px;
+		background: $black !important;
+		border-radius: 1px;
+		transition: .2s ease all;
+
+		&.active {
+			background: $main !important;
+		}
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
