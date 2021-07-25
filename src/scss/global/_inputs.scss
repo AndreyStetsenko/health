@@ -23,8 +23,9 @@
 		font-weight: 400;
 		color: $black;
 
-		&:placeholder {
+		&::placeholder {
 			color: $gray;
+			font-weight: 700;
 		}
 
 		&:focus {
